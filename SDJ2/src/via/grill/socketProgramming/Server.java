@@ -76,7 +76,7 @@ public class Server {
         clientSocket.close();
     }
 	
-	 	private class ServerThread
+	 	private class ServerThread //this makes the system multithreaded.
  		implements Runnable
  		{	
 		 private Socket clientSocket;
@@ -101,13 +101,6 @@ public class Server {
 }
 	
 }	
-
-//I think i have to make request and response classes for each "instance" i guess, so with this grill exercise;
-// - make request and response for a customer ordering a burger, and a response for that
-//  - in the response i need to have a method that will not make any burgers if the cooks are not ready (like in GrillSimulation.java)
-// - Is that the only one actually? because if the customer orders a burger, then if it's ready, he would receive it (in a window ofc.)
-// - Then i would also need multiple servers for each of the "actions" in the grill.
-// - Serializable or multithreading?
 
 
 

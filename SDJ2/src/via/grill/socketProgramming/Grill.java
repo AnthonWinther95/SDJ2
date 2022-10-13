@@ -7,7 +7,7 @@ public class Grill { //this is a monitor
 	private int burgersInStock = 0;
 	private int burgersInProduction = 0;
 	
-	public Grill ( int maxBurges )
+	public Grill ( int maxBurgers )
 	{
 		this.maxBurgers = maxBurgers;
 	}
